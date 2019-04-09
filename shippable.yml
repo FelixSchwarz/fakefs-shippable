@@ -8,12 +8,11 @@ install:
  # good: 2441b94d506da5aae18c24b8c7bc14a6a42cde2c
  - pip3 install -e git+https://github.com/jmcgeheeiv/pyfakefs.git@2441b94d506da5aae18c24b8c7bc14a6a42cde2c#egg=pyfakefs
  - pip3 install nose
- - ls -la /usr/bin/n*
 
 
 before_script:
  - mkdir -p shippable/testresults
 
 script:
- - nosetests-3 --with-xunit --xunit-file=shippable/testresults/nosetests.xml
+ - nosetests-3.4 --with-xunit --xunit-file=shippable/testresults/nosetests.xml
 
