@@ -6,7 +6,9 @@ install:
  - python3 get-pip.py
 
  # good: 2441b94d506da5aae18c24b8c7bc14a6a42cde2c
- - pip3 install -e git+https://github.com/jmcgeheeiv/pyfakefs.git@2441b94d506da5aae18c24b8c7bc14a6a42cde2c#egg=pyfakefs
+ #- pip3 install -e git+https://github.com/jmcgeheeiv/pyfakefs.git@2441b94d506da5aae18c24b8c7bc14a6a42cde2c#egg=pyfakefs
+ # bad: c16a50841ab7b4e7fe116e1ecdf1269c5272bcab
+ - pip3 install -e git+https://github.com/jmcgeheeiv/pyfakefs.git@c16a50841ab7b4e7fe116e1ecdf1269c5272bcab#egg=pyfakefs
  - pip3 install nose
 
 
