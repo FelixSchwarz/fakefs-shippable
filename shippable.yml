@@ -2,10 +2,10 @@ language: python
 
 install:
  - python3 --version
- - ls -la /usr/bin
- - pip --version
- - pip install --upgrade pip
- - pip install --upgrade nose
+ - ls -la /usr/bin p*
+ - curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+ - python3 get-pip.py
+ - ls -la /usr/bin p*
 
  # good: 2441b94d506da5aae18c24b8c7bc14a6a42cde2c
  - pip install -e https://github.com/jmcgeheeiv/pyfakefs.git@2441b94d506da5aae18c24b8c7bc14a6a42cde2c#egg=pyfakefs
